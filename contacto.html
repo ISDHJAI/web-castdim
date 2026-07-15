@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | CASTDIM San Luis Potosí</title>
+  <meta name="description" content="Contacta a CASTDIM: WhatsApp, teléfono 444 112 4011, contactoventas@castdim.mx. Blvd. San Antonio #230, Villa de Pozos, San Luis Potosí.">
+  <link rel="icon" type="image/png" href="img/castdim-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacto" data-nav="overlay">
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1900&auto=format&fit=crop" alt="Contacto CASTDIM">
+    </div>
+    <div class="container">
+      <span class="kicker">Contacto</span>
+      <h1>Hablemos de tu próximo paso</h1>
+      <p>Casas, proyectos, lotes o inversión: nuestro equipo te responde el mismo día.</p>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container contact-grid">
+      <div class="reveal reveal--left">
+        <span class="kicker">Encuéntranos</span>
+        <h2 class="section-title">Estamos para <em>servirte</em></h2>
+
+        <div class="contact-item">
+          <div class="perk__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#e5b12e"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg></div>
+          <div>
+            <h3>WhatsApp</h3>
+            <a data-wa="Hola CASTDIM, me gustaría recibir información.">Escríbenos ahora — respuesta inmediata</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="perk__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#e5b12e"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div>
+            <h3>Teléfono</h3>
+            <a href="tel:+524441124011">444 112 4011</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="perk__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#e5b12e"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <div>
+            <h3>Correo</h3>
+            <a href="mailto:contactoventas@castdim.mx">contactoventas@castdim.mx</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="perk__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#e5b12e"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <div>
+            <h3>Oficina</h3>
+            <p>Blvd. San Antonio #230, Villa de Pozos,<br>C.P. 78421, San Luis Potosí, S.L.P.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="form reveal reveal--right" id="contactForm">
+        <h3>Déjanos tus datos</h3>
+        <p>Al enviar se abrirá WhatsApp con tu mensaje listo. Así de fácil.</p>
+
+        <label for="f-nombre">Nombre</label>
+        <input id="f-nombre" name="nombre" type="text" placeholder="Tu nombre completo" required>
+
+        <label for="f-telefono">Teléfono</label>
+        <input id="f-telefono" name="telefono" type="tel" placeholder="Tu número de contacto" required>
+
+        <label for="f-interes">Me interesa</label>
+        <select id="f-interes" name="interes" required>
+          <option value="Comprar una casa">Comprar una casa</option>
+          <option value="Departamentos">Departamentos</option>
+          <option value="Casa especial (personalizada)">Casa especial (personalizada)</option>
+          <option value="Proyecto para mi empresa">Proyecto para mi empresa</option>
+          <option value="Lotes comerciales">Lotes comerciales</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="f-mensaje">Mensaje</label>
+        <textarea id="f-mensaje" name="mensaje" placeholder="Cuéntanos qué buscas…"></textarea>
+
+        <button class="btn btn--wa" type="submit"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg> Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Visítanos</span>
+        <h2 class="section-title">Aquí nos <em>encuentras</em></h2>
+      </div>
+      <div class="map-wrap reveal" style="margin-top:36px;">
+        <iframe title="Mapa oficina CASTDIM" src="https://www.google.com/maps?q=Boulevard+San+Antonio+230,+Villa+de+Pozos,+San+Luis+Potosi&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
