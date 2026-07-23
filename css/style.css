@@ -382,6 +382,48 @@ body.menu-open .nav__burger span:nth-child(3) { transform: translateY(-8.5px) ro
 .page-hero .kicker { color: var(--gold); }
 .page-hero .kicker::before { background: var(--gold); }
 
+/* ---------- barra de filtro (casas/departamentos) ---------- */
+.filter-bar {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 40;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+}
+.filter-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.filter-bar__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+.filter-bar__field label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+.filter-bar__field select {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+.filter-bar__field select:focus { border-color: var(--gold); }
+
 /* ---------- franja de estadísticas ---------- */
 .stats {
   background: var(--ink);

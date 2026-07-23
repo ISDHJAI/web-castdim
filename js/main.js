@@ -42,6 +42,7 @@ function buildHeader() {
           <li class="nav__menu-extra nav__menu-icon-wrap"><img class="nav__menu-icon" src="img/castdim-icon.png" alt="CASTDIM"></li>
           <li><a class="nav__link${active("inicio")}" href="index.html">Inicio</a></li>
           <li><a class="nav__link${active("casas")}" href="casas.html">Casas</a></li>
+          <li><a class="nav__link${active("departamentos")}" href="casas.html#departamentos">Departamentos</a></li>
           <li>
             <a class="nav__link${active("desarrollos")}" href="desarrollos-pozos.html">Desarrollos ▾</a>
             <div class="nav__drop">

@@ -25,8 +25,30 @@
     </div>
   </section>
 
+  <!-- ============ FILTRO ============ -->
+  <section class="filter-bar">
+    <div class="container filter-bar__inner">
+      <div class="filter-bar__field">
+        <label for="filterTipo">¿Qué buscas?</label>
+        <select id="filterTipo">
+          <option value="todas">Casas y departamentos</option>
+          <option value="casa">Casas</option>
+          <option value="departamento">Departamentos</option>
+        </select>
+      </div>
+      <div class="filter-bar__field">
+        <label for="filterZona">Zona</label>
+        <select id="filterZona">
+          <option value="todas">Todas las zonas</option>
+          <option value="villa-de-pozos">Villa de Pozos</option>
+          <option value="soledad">Soledad</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ VILLA DE POZOS ============ -->
-  <section class="section section--cream">
+  <section class="section section--cream" id="villa-de-pozos" data-tipo="casa" data-zona="villa-de-pozos">
     <div class="container">
       <div class="center">
         <span class="kicker">Villa de Pozos</span>
@@ -212,53 +234,11 @@
 
       </div>
 
-      <h3 class="group-head">Avante · Departamentos en Sotavento</h3>
-      <div class="cards">
-
-        <!-- AVANTE · CAPRI -->
-        <article class="card reveal">
-          <div class="card__media">
-            <img src="https://isdhjai.github.io/Avante-Capri/images/hero-capri.jpg" alt="Departamentos Capri, Avante">
-            <span class="card__badge card__badge--dark">Preventa</span>
-          </div>
-          <div class="card__body">
-            <h3>Capri</h3>
-            <span class="card__loc">📍 Avante · Sotavento, Villa de Pozos</span>
-            <div class="card__specs">
-              <span>🛏 3 habitaciones</span>
-              <span>📐 85.17 m² const.</span>
-              <span>🌳 Jardín privado</span>
-            </div>
-            <p class="card__price">Precio por confirmar</p>
-            <a class="btn btn--wa" data-wa-num="524448608497" data-wa="Hola CASTDIM, me interesa un departamento Capri en Avante (Sotavento, Villa de Pozos). ¿Me pueden dar más información?">Me interesa · WhatsApp</a>
-          </div>
-        </article>
-
-        <!-- AVANTE · MALTA -->
-        <article class="card reveal" data-delay="1">
-          <div class="card__media">
-            <img src="https://isdhjai.github.io/Avante-Malta/images/hero-familia.jpg" alt="Departamentos Malta, Avante">
-            <span class="card__badge card__badge--dark">Preventa</span>
-          </div>
-          <div class="card__body">
-            <h3>Malta</h3>
-            <span class="card__loc">📍 Avante · Sotavento, Villa de Pozos</span>
-            <div class="card__specs">
-              <span>🛏 2 habitaciones</span>
-              <span>🛁 2 baños</span>
-              <span>📐 90.94 m² const.</span>
-            </div>
-            <p class="card__price"><span class="card__from">Desde</span>$1,599,000</p>
-            <a class="btn btn--wa" data-wa-num="524448608497" data-wa="Hola CASTDIM, me interesa un departamento Malta en Avante (Sotavento, Villa de Pozos). ¿Me pueden dar más información?">Me interesa · WhatsApp</a>
-          </div>
-        </article>
-
-      </div>
     </div>
   </section>
 
   <!-- ============ SOLEDAD DE GRACIANO SÁNCHEZ ============ -->
-  <section class="section">
+  <section class="section" id="soledad" data-tipo="casa" data-zona="soledad">
     <div class="container">
       <div class="center">
         <span class="kicker">Soledad de Graciano Sánchez</span>
@@ -372,6 +352,79 @@
     </div>
   </section>
 
+  <!-- ============ DEPARTAMENTOS ============ -->
+  <section class="section section--cream" id="departamentos" data-tipo="departamento">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Departamentos</span>
+        <h2 class="section-title">Vive en <em>departamento</em></h2>
+      </div>
+
+      <h3 class="group-head">Avante · Departamentos en Sotavento, Villa de Pozos</h3>
+      <div class="cards">
+
+        <!-- AVANTE · CAPRI -->
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="https://isdhjai.github.io/Avante-Capri/images/hero-capri.jpg" alt="Departamentos Capri, Avante">
+            <span class="card__badge card__badge--dark">Preventa</span>
+          </div>
+          <div class="card__body">
+            <h3>Capri</h3>
+            <span class="card__loc">📍 Avante · Sotavento, Villa de Pozos</span>
+            <div class="card__specs">
+              <span>🛏 3 habitaciones</span>
+              <span>📐 85.17 m² const.</span>
+              <span>🌳 Jardín privado</span>
+            </div>
+            <p class="card__price">Precio por confirmar</p>
+            <a class="btn btn--wa" data-wa-num="524448608497" data-wa="Hola CASTDIM, me interesa un departamento Capri en Avante (Sotavento, Villa de Pozos). ¿Me pueden dar más información?">Me interesa · WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- AVANTE · MALTA -->
+        <article class="card reveal" data-delay="1">
+          <div class="card__media">
+            <img src="https://isdhjai.github.io/Avante-Malta/images/hero-familia.jpg" alt="Departamentos Malta, Avante">
+            <span class="card__badge card__badge--dark">Preventa</span>
+          </div>
+          <div class="card__body">
+            <h3>Malta</h3>
+            <span class="card__loc">📍 Avante · Sotavento, Villa de Pozos</span>
+            <div class="card__specs">
+              <span>🛏 2 habitaciones</span>
+              <span>🛁 2 baños</span>
+              <span>📐 90.94 m² const.</span>
+            </div>
+            <p class="card__price"><span class="card__from">Desde</span>$1,599,000</p>
+            <a class="btn btn--wa" data-wa-num="524448608497" data-wa="Hola CASTDIM, me interesa un departamento Malta en Avante (Sotavento, Villa de Pozos). ¿Me pueden dar más información?">Me interesa · WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="group-head">Torre Tolosa II</h3>
+      <div class="cards">
+
+        <!-- TORRE TOLOSA II -->
+        <article class="card reveal">
+          <div class="card__media card__media--soon">
+            <img src="img/castdim-icon.png" alt="Torre Tolosa II">
+            <span class="card__badge card__badge--dark">Próximamente · Preventa</span>
+          </div>
+          <div class="card__body">
+            <h3>Torre Tolosa II</h3>
+            <span class="card__loc">📍 Torre Tolosa II</span>
+            <p class="card__desc">Muy pronto abrimos preventa. Inscríbete por WhatsApp para recibir información prioritaria.</p>
+            <p class="card__price">Precio por confirmar</p>
+            <a class="btn btn--wa" data-wa-num="524444116075" data-wa="Hola CASTDIM, quiero inscribirme a la preventa de Torre Tolosa II.">Inscríbete a la preventa · WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <section class="section center">
     <div class="container">
       <span class="kicker">¿Aún no encuentras la tuya?</span>
@@ -383,5 +436,36 @@
 
   <div id="site-footer"></div>
   <script src="js/main.js?v=2"></script>
+  <script>
+    (function () {
+      const selTipo = document.getElementById("filterTipo");
+      const selZona = document.getElementById("filterZona");
+      const groups = document.querySelectorAll("[data-tipo]");
+
+      function applyFilters() {
+        const tipo = selTipo.value;
+        const zona = selZona.value;
+        groups.forEach((section) => {
+          const matchTipo = tipo === "todas" || section.dataset.tipo === tipo;
+          const matchZona = zona === "todas" || !section.dataset.zona || section.dataset.zona === zona;
+          section.style.display = matchTipo && matchZona ? "" : "none";
+        });
+      }
+
+      selTipo.addEventListener("change", applyFilters);
+      selZona.addEventListener("change", applyFilters);
+
+      if (location.hash === "#departamentos") {
+        selTipo.value = "departamento";
+      }
+      applyFilters();
+
+      if (location.hash === "#departamentos") {
+        setTimeout(() => {
+          document.getElementById("departamentos").scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 300);
+      }
+    })();
+  </script>
 </body>
 </html>
